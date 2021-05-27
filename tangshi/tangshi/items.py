@@ -1,25 +1,19 @@
-# -*- coding: utf-8 -*-
-
 # Define here the models for your scraped items
 #
 # See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
+# https://docs.scrapy.org/en/latest/topics/items.html
 
-from scrapy import Field, Item
-
-
-class TangshiItem(Item):
-    chaodai = Field()
-    poemer = Field()
-    zuopins_total = Field()
-    poemer_url = Field()
+import scrapy
 
 
-class PoemZuopin(Item):
-    poemer = Field()
-    poemer_url = Field()
-    zuopin_name = Field()
-    name_words = Field()
-    zuopin_content = Field()
-    zuopin_words = Field()
-    zuopin_url = Field()
+class TangshiItem(scrapy.Item):
+    dynasty = scrapy.Field()
+    poet_name = scrapy.Field()
+    poet_url = scrapy.Field()
+    poem_name = scrapy.Field()
+    poem_url = scrapy.Field()
+    contents = scrapy.Field()
+    poet_desc = scrapy.Field()
+    crawl_url = scrapy.Field()
+     
+    

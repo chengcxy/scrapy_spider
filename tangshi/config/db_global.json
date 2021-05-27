@@ -1,0 +1,15 @@
+{
+    "from": {
+        "mysql": {
+            "rds-local_spider": {
+                "host": "localhost",
+                "user": "root",
+                "password": "123456",
+                "db": "spider",
+                "port": 3306,
+                "charset": "utf8"
+            }
+           
+        }     
+    }
+}
