@@ -7,9 +7,6 @@ from tangshi.items import TangshiItem
 
 class Spider(CrawlSpider):
     name = "crawler_tangshi"
-    
-    base_url = "https://gs.amac.org.cn/amac-infodisc/api/pof/subfund?rand=&page={}&size={}"
-    
     def start_requests(self):
         dynastys = {
             "先秦": "https://www.shi-ci.com/dynasty/72057594037927936", 
